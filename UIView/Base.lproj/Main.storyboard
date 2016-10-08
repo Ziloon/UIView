@@ -34,7 +34,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="YkC-Fn-g1v" kind="push" id="w7d-Vg-VLb"/>
+                                            <segue destination="YkC-Fn-g1v" kind="show" id="SwL-vh-2Eh"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
