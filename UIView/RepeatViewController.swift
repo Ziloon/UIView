@@ -20,6 +20,13 @@ class RepeatViewController: UIViewController {
     var color3 = UIColor(red:0.23, green:0.65, blue:0.34, alpha:1.00)
     var color4 = UIColor(red:0.27, green:0.53, blue:0.95, alpha:1.00)
     
+    var centerPoint = CGPoint.init(x: UIScreen.main.bounds.width / 2, y: UIScreen.main.bounds.height / 2)
+    
+    var point1 = CGPoint.init(x: UIScreen.main.bounds.width / 2 - 55, y: UIScreen.main.bounds.height / 2 - 55)
+    var point2 = CGPoint.init(x: UIScreen.main.bounds.width / 2 + 55, y: UIScreen.main.bounds.height / 2 - 55)
+    var point3 = CGPoint.init(x: UIScreen.main.bounds.width / 2 + 55, y: UIScreen.main.bounds.height / 2 + 55)
+    var point4 = CGPoint.init(x: UIScreen.main.bounds.width / 2 - 55, y: UIScreen.main.bounds.height / 2 + 55)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -36,9 +43,26 @@ class RepeatViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        UIView.animate(withDuration: 1, delay: 0.1, options: [.repeat, .autoreverse] , animations: {
-            self.view1.transform = self.view1.transform.rotated(by: CGFloat(M_PI))
+        
+        UIView.animate(withDuration: 0.7, delay: 0, options: [.repeat] , animations: {
+            
+            self.view1.transform = self.view1.transform.rotated(by: CGFloat(0.5*M_PI))
+            self.view1.center = self.point2
+            self.view1.backgroundColor = self.color2
+            
+            self.view2.transform = self.view2.transform.rotated(by: CGFloat(0.5*M_PI))
+            self.view2.center = self.point3
+            self.view2.backgroundColor = self.color3
+            
+            self.view3.transform = self.view3.transform.rotated(by: CGFloat(0.5*M_PI))
+            self.view3.center = self.point4
+            self.view3.backgroundColor = self.color4
+            
+            self.view4.transform=self.view4.transform.rotated(by: CGFloat(0.5*M_PI))
+            self.view4.center = self.point1
+            self.view4.backgroundColor = self.color1
             }, completion: nil)
+        
     }
     /*
     // MARK: - Navigation

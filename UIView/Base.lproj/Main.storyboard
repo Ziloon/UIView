@@ -21,11 +21,11 @@
                                         <rect key="frame" x="0.0" y="64" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="b1u-Nb-NRf" id="8po-Ri-b9b">
-                                            <frame key="frameInset" width="342" height="43"/>
+                                            <frame key="frameInset" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Repeat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="c4T-1Q-5sB">
-                                                    <frame key="frameInset" minX="15" width="325" height="43"/>
+                                                    <frame key="frameInset" minX="15" width="325" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -64,22 +64,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Joi-nJ-v0R">
-                                <frame key="frameInset" minX="83" minY="229" width="100" height="100"/>
+                                <frame key="frameInset" minX="93" minY="239" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.76546918413423792" green="1" blue="0.95149487121344622" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BKh-aq-orq">
-                                <frame key="frameInset" minX="191" minY="229" width="100" height="100"/>
+                                <frame key="frameInset" minX="201" minY="239" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.76546918409999998" green="1" blue="0.95149487119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WiU-xJ-J9g">
-                                <frame key="frameInset" minX="83" minY="337" width="100" height="100"/>
+                                <frame key="frameInset" minX="93" minY="347" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.76546918409999998" green="1" blue="0.95149487119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SFT-Lg-u7W">
-                                <frame key="frameInset" minX="191" minY="337" width="100" height="100"/>
+                                <frame key="frameInset" minX="201" minY="347" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.76546918409999998" green="1" blue="0.95149487119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
@@ -90,8 +90,8 @@
                     <connections>
                         <outlet property="view1" destination="Joi-nJ-v0R" id="UBs-Pb-KFG"/>
                         <outlet property="view2" destination="BKh-aq-orq" id="BcP-W6-T2D"/>
-                        <outlet property="view3" destination="WiU-xJ-J9g" id="KQ9-OP-rZD"/>
-                        <outlet property="view4" destination="SFT-Lg-u7W" id="ga9-Oe-BHh"/>
+                        <outlet property="view3" destination="SFT-Lg-u7W" id="xHT-vG-heJ"/>
+                        <outlet property="view4" destination="WiU-xJ-J9g" id="yQ9-IK-iPP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NM4-F7-hCz" userLabel="First Responder" sceneMemberID="firstResponder"/>
