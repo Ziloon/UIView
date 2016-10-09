@@ -44,7 +44,7 @@ class RepeatViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         
-        UIView.animate(withDuration: 0.7, delay: 0, options: [.repeat] , animations: {
+        UIView.animate(withDuration: 0.7, delay: 0, options: [.repeat, .curveEaseOut] , animations: {
             
             self.view1.transform = self.view1.transform.rotated(by: CGFloat(0.5*M_PI))
             self.view1.center = self.point2
